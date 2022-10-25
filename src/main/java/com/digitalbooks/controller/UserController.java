@@ -12,7 +12,7 @@ import com.digitalbooks.service.UserService;
 
 
 @RestController
-@RequestMapping("/api/student")
+@RequestMapping("/api/v1/digitalbooks")
 public class UserController {
 	
 	@Autowired
@@ -27,4 +27,8 @@ public class UserController {
 	public User loginUser(@RequestBody User user) {
 		return userService.loginUser(user);
 	}
+	
+	
+	
+	
 }

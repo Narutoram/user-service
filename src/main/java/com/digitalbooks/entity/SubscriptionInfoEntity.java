@@ -32,9 +32,44 @@ public class SubscriptionInfoEntity {
 
 	@OneToOne
 	@JoinColumn(name = "user_id")
-	private User user;
+	private Long userId;
 
 	@Column(name = "subscription_date")
 	private ZonedDateTime subscriptionDate;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Long getBookId() {
+		return bookId;
+	}
+
+	public void setBookId(Long bookId) {
+		this.bookId = bookId;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long user) {
+		this.userId = user;
+	}
+
+	public ZonedDateTime getSubscriptionDate() {
+		return subscriptionDate;
+	}
+
+	public void setSubscriptionDate(ZonedDateTime subscriptionDate) {
+		this.subscriptionDate = subscriptionDate;
+	}
+	
+	
+	
 
 }
